@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hero Section with Overlay</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+<!-- Top Contact Bar -->
+<div class="top-bar container-fluid px-5 d-none d-md-flex"> <!-- Hide on mobile devices -->
+  <div class="d-flex justify-content-between align-items-center w-100">
+    <!-- Left Side: Contact Information -->
+    <div class="contact-info">
+      <span><i class="fa fa-phone"></i> +1 234 567 890</span>
+      <span><i class="fa fa-envelope-o"></i> info@example.com</span>
+    </div>
+    <!-- Right Side: Social Media Icons -->
+    <div class="social-icons">
+      <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+      <a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+      <a href="#"><i class="fa fa-youtube" aria-hidden="true"></i></a>
+      <a href="#"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+      <a href="#"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
+    </div>
+  </div>
+</div>
+
+<div class="pos-f-t">
+    <nav class="navbar navbar-dark">
+      <a class="navbar-brand" href="#">
+          <img src="assets/logo.PNG" alt="Dr Sanya Logo" style="max-height: 100px; width: auto; padding-top: 5px; transform: translateY(-10%);"> 
+      </a>
+      <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse collapse-right bg-dark p-1" id="navbarToggleExternalContent">
+        <a href="#" class="dropdown-item text-white">Home</a>
+        <a href="#" class="dropdown-item text-white">About</a>
+        <a href="#" class="dropdown-item text-white">Awards</a>
+        <a href="#" class="dropdown-item text-white">Services</a>
+        <a href="#" class="dropdown-item text-white">Events</a>
+        <a href="#" class="dropdown-item text-white">Vastu Art</a>
+        <a href="#" class="dropdown-item text-white">Vastu Auspice Crafts</a>
+        <a href="#" class="dropdown-item text-white">Wealth Weaves</a>
+        <a href="#" class="dropdown-item text-white">Learning Point</a>
+        <a href="#" class="dropdown-item text-white">Appointment</a>
+        <a href="#" class="dropdown-item text-white">Contact</a>
+      </div>
+    </nav>
+  </div>
+  
+
+<!-- Hero Section -->
+<section class="hero animate__animated animate__slideInDown">
+    <div class="hero-content container h-100">
+      <div class="row h-100 justify-content-center align-items-center"> <!-- Center the content -->
+        <div class="col-md-8 text-center"> <!-- Centered text in mobile view -->
+          <h1>Dr Sanya K Adhlakha</h1>
+          <p>Celebrity Tarot Expert (PhD in Tarot Card Reading)</p>
+          <p>Astrologer, Numerologist, Healer</p>
+          <p>The only astrologer who predicted Covid-19</p>
+          <a href="#" class="btn btn-primary">Book an Appointment</a>
+        </div>
+      </div>
+    </div>
+</section>
+  
+
+<!-- About Me Section -->
+<div class="scroll-content pt-5"> <!-- Added pt-5 for top padding -->
+    <div class="container">
+        <h2 class="col-md-6 text-md-left text-center">Discover Solutions and Achieve Clarity</h2> <!-- Centered heading -->
+        <div class="row align-items-center">
+            <div class="col-md-6 text-md-left text-center"> <!-- Align text left on medium screens and center on small screens -->
+                <p>
+                    Through years of practicing Tarot and Astrology and engaging with individuals from diverse backgrounds, I have developed a profound belief that every challenge presents an opportunity for resolution, akin to a lock that requires a key.
+                    For those who seek insights through Horoscopes, Tarot, or Numerology, my approach involves identifying tailored remedies that serve as the key to unlocking personal fulfilment and achieving your goals. Once this key is discovered, you may find a renewed appreciation for life and a deeper understanding of the valuable lessons it offers.
+                </p>
+                <a href="#" class="btn btn-primary">Learn More</a>
+            </div>
+            <div class="col-md-6">
+                <div class="about-image-container">
+                    <img src="assets/bg.JPEG" alt="Top Image" class="about-image img-fluid">
+                    <img src="assets/bg.JPEG" alt="Shadow Image" class="about-image-shadow img-fluid">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+  
+  
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script><script>
+    window.addEventListener('scroll', function() {
+      const scrollContent = document.querySelector('.scroll-content');
+      const heroHeight = document.querySelector('.hero').offsetHeight;
+  
+      // Add a class to the scroll content based on scroll position
+      if (window.scrollY > heroHeight - 50) { // 50px offset for smoother transition
+        scrollContent.classList.add('is-scrolling');
+      } else {
+        scrollContent.classList.remove('is-scrolling');
+      }
+    });
+  </script>
+  
+  </body>
+  </html>
+  
+  
+  
+  
+  
+  
+  
+  
+  

@@ -1,0 +1,177 @@
+body{
+    background-color: #fefefe;
+}
+.collapse-right {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  width: 200px;
+}
+.collapse-right .dropdown-item {
+  border-bottom: 1px solid #ccc;
+}
+.top-bar {
+  background-color: #ffffff; 
+  color: #000000;
+  padding: 10px 20px;
+}
+.top-bar a {
+  color: #000000;
+  margin-left: 10px;
+  text-decoration: none;
+}
+.contact-info span {
+    margin-right: 15px; /* Space between phone and email */
+}
+.hero {
+  position: relative;
+  height: 100vh; /* Full height for the hero section */
+  background-image: url('../assets/bg.JPEG'); /* Hero image */
+  background-size: cover;
+  background-position: center;
+  color: white; /* Text color */
+  display: flex;
+  align-items: center; /* Center text vertically */
+  justify-content: center; /* Center text horizontally */
+  text-align: center; /* Center text */
+  overflow: hidden; /* Prevents overflow */
+  background-position-x: 200px ;
+}
+.hero::before {
+  content: ""; /* Empty content for the pseudo-element */
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5); /* Black overlay with opacity */
+  z-index: 1; /* Positioned below the text but above the image */
+}
+.navbar {
+  position: absolute; /* Positioning navbar absolutely */
+  left: 0; /* Align to the left */
+  right: 0; /* Align to the right */
+  background-color: transparent !important; /* Make navbar transparent */
+  z-index: 2; /* Ensure it appears above other elements */
+  
+  
+}
+
+.navbar-toggler {
+  background-color: #14161a; /* Dark gray color for the collapse button */
+}
+.hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Center the content */
+    color: white; /* Text color */
+    text-align: center; /* Centered text */
+    z-index: 1;
+  }
+
+  .scroll-content {
+    padding-top: 80vh; /* Offset to show hero section */
+    position: relative; /* Allows stacking with the hero section */
+    z-index: 1; /* Place above the hero section */
+  }
+.scroll-content {
+  z-index: 0; /* Content below the hero */
+  position: relative;
+  background: white; /* Background color for the content */
+  height: 100vh;
+}
+.btn{
+    background-color: #14161a;
+    border-radius: 10;
+    color: white;
+    padding: 7px 20px;
+    font-weight: bold;
+    border: none;
+}
+.hero h1 {
+    margin-bottom: 40px; /* Space below the title */
+    font-size: 60px;
+    margin-top: 50px;
+    color: #ffffff !important;
+  }
+
+  .hero p {
+    margin: 0; /* Remove margin from paragraphs */
+    font-weight: 600;
+  }
+
+  .hero .btn {
+    margin-top: 20px; /* Space above button */
+  }
+  @media (max-width: 768px) { 
+    .navbar {
+        position: absolute; /* Positioning navbar absolutely */
+        left: 0; /* Align to the left */
+        right: 0; /* Align to the right */
+        background-color: black !important; /* Make navbar transparent */
+        z-index: 2; /* Ensure it appears above other elements */
+    }
+    .navbar .navbar-brand{
+        height: 60px !important;
+        margin-bottom: 8px !important;
+        transform: translateY(-15%);
+    }
+    .hero {
+        background-position-x: 0px !important ;
+        justify-content: center !important;
+
+      }
+      .about-section {
+        margin-bottom: 40px !important;
+        text-align: center !important;
+      }
+      .about-image-container{
+        margin-top: 40px !important;
+        max-width: 300px !important;
+        margin-left: 25px;
+      }
+      .about-image-shadow{
+        margin-left: -20px;
+        max-width: 300px !important;
+      }
+      
+    
+}
+.about-section {
+    padding-top: 50px; /* Space between hero section and about section */
+  }
+  .about-image-container {
+    position: relative;
+    display: inline-block; /* Aligns the image with the text */
+    max-width: 400px; /* Set a max width for the images */
+    margin-top: -20px; /* Optional margin for spacing */
+    margin-left: 40px;
+  }
+  
+  .about-image {
+    width: 100%; /* Ensure the image is responsive */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 15px; /* Optional: Add rounded corners */
+    position: relative; /* To ensure it's on top */
+    z-index: 2; /* Bring this image above the shadow */
+    margin-top: -30px; /* Move it upwards */
+    margin-left: 50px; /* Move it to the right */
+    border: 3px solid #feffff; /* Add a blue border (adjust color and width as needed) */
+  }
+  
+  .about-image-shadow {
+    position: absolute;
+    top: 10px; /* Adjust for slight overlap */
+    left: 0;
+    width: 100%; /* Ensure the shadow image is responsive */
+    height: auto; /* Maintain aspect ratio */
+    filter: blur(2px); /* Add blur effect for the shadow */
+    opacity: 0.7; /* Adjust shadow visibility */
+    z-index: 1; /* Behind the top image */
+    border-radius: 15px;
+  }
+  /* Add smooth scrolling */
+  html {
+    scroll-behavior: smooth;
+  }
